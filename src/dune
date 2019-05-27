@@ -1,7 +1,6 @@
 (library
  (name graph)
  (libraries graphlib)
- (modules_without_implementation gml)
  (flags :standard -w -3-32-50)
  (public_name ocamlgraph))
 
@@ -30,5 +29,6 @@
    (echo "\nend = Dot_ast\ninclude Dot_ast\n"))))
 
 (ocamllex dot_lexer)
+(ocamllex gml)
 
 (ocamlyacc dot_parser)
